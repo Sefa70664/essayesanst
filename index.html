@@ -7,12 +7,28 @@
     <!-- PWA & Android TV Meta Tags -->
     <title>Sefinity - Premium IPTV</title>
     <meta name="description" content="Sefinity IPTV Player - Live TV, Movies & Series" />
-    <link rel="manifest" href="/manifest.json" />
+    <link rel="manifest" href="/assets/manifest-DOGcJNjr.json" />
     <meta name="theme-color" content="#020617" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              lacivert: {
+                DEFAULT: '#020617',
+                light: '#0f172a'
+              }
+            }
+          }
+        }
+      }
+    </script>
     <style>
       /* Custom scrollbar hiding utility */
       .scrollbar-hide::-webkit-scrollbar {
@@ -29,9 +45,22 @@
         -webkit-tap-highlight-color: transparent;
       }
     </style>
-  </head>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "hls.js": "https://aistudiocdn.com/hls.js@^1.6.15"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-DErGY-yJ.js"></script>
+</head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
-  </body>
+</body>
 </html>
